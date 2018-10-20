@@ -2,7 +2,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-//½«Èı¸öÊı°´´óµ½Ğ¡Êä³ö
+//å°†ä¸‰ä¸ªæ•°æŒ‰å¤§åˆ°å°è¾“å‡º
 
 int main()
 {
@@ -10,7 +10,7 @@ int x = 0;
 	int y = 0;
 	int z = 0;
 	int t = 0;
-	printf("ÇëÊäÈëÈı¸öÊı×Ö:");
+	printf("è¯·è¾“å…¥ä¸‰ä¸ªæ•°å­—:");
 	scanf("%d %d %d", &x, &y, &z);
 	if(x < y)
 	{
@@ -30,23 +30,7 @@ int x = 0;
 		y = x;
 		x = t;
 	}
-
-
-
-
 	printf("%d %d %d\n", x, y, z);
-
-
-
-
 	system("pause");
-
-
-
-
 	return 0;
-
-
-
-
 }
