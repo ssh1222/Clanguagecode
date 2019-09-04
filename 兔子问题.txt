@@ -1,0 +1,27 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+#include<stdlib.h>
+
+//古典问题：有一对兔子，从出生后第三个月起每月生一对
+//小兔子长到第三个月又生一对，假如兔子都不死，问每月兔子的总数
+//规律就是1,1,2,3,5,8,13,21...
+
+int Sum(int n)
+{
+	if (n == 1 || n == 2)
+	{
+		return 1;
+	}
+	return Sum(n - 1) + Sum(n - 2);
+}
+
+int main()
+{
+	//采用递归的算法，需要返回值
+	int n = 0;
+	printf("请输入查询的月数：");
+	scanf("%d", &n);
+	printf("%d\n",Sum(n));
+	system("pause");
+	return 0;
+}
